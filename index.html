@@ -21,22 +21,23 @@
             </div>
             <div class="flex gap-4">
                 <div class="flex justify-center items-center w-[123px] h-[52px] bg-[rgba(65,255,107,0.1)] rounded-[50px]">
-                    <p>0</p>
+                    <p class="font-bold">0</p>
                     <img class="w-[30px] h-[30px] ml-[5px]" src="./assets/heart.png" alt="">
                 </div>
                 <div class="flex justify-center items-center w-[123px] h-[52px] bg-[rgba(65,255,107,0.1)] rounded-[50px]">
-                    <p>100</p>
+                    <p class="font-bold" >100</p>
                     <img class="w-[30px] h-[30px] ml-[5px]" src="./assets/coin.png" alt="">
                 </div>
                 <div class="flex justify-center items-center w-[123px] h-[52px] bg-[#00A63E] rounded-[50px] ">
-                    <p>0</p>
-                    <p class="ml-[5px]">Copy</p>
+                    <p class="font-bold text-white" >0</p>
+                    <p class="ml-[5px] font-bold text-white">Copy</p>
                 </div>
             </div>
         </nav>
     </header>
+    <!-- Banner section -->
     <section class="mt-[20px]">
-        <!-- Banner section -->
+        
         <div class=" flex flex-col justify-center items-center mx-w-[1920px] max-h-[240px] bg-[linear-gradient(to_right,#013223_0%,#006747_50%,#013223_100%)] py-[20px]">
             <img class="w-[92px] h-[92px]" src="./assets/logo-dark.png" alt="">
             <h3 class="hind-madurai-regular text-white font-bold text-[40px]">Emergency Service Directory</h3>
@@ -44,7 +45,7 @@
         </div>
     </section>
     <!-- card section -->
-    <section class=" max-w-[1800px] p-4 m-auto flex gap-8">
+    <section class=" mx-w-[1920px] p-4 m-auto flex gap-8 justify-center bg-[rgba(65,255,107,0.1)]">
     <div class="grid grid-cols-3 gap-[30px]">
         <div class="bg-white shadow-md rounded-2xl p-4 max-w-[400px] ">
     <div class="flex justify-between items-center mb-4">
@@ -264,15 +265,18 @@
         </div>
     </div>
 
-    <div class="max-w-[400px]">
-        <div class="flex">
-            <i class="fa-light fa-clock"></i>
-            <p class="roboto-font">Call History</p>
-        </div>
-
+    <div class="flex flex-col rounded-lg shadow-md w-[400px] bg-white">
+     <div class="flex items-center justify-between p-5">
+     <div class="flex items-center gap-2">
+      <i class="fa-regular fa-clock"></i>
+      <h2 class="font-semibold">Call History</h2>
+    </div>
+    <button class="bg-[#00A63E] text-white text-xl p-3 rounded-[50px] w-[114px] font-semibold text-xl roboto-font">Clear</button>
+     </div>
     </div>
 
-</section>
+
+    </section>
 
 
 </body>
