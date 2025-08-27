@@ -18,6 +18,12 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
     <title>Emergency Service</title>
   </head>
@@ -431,13 +437,17 @@
             Clear
           </button>
         </div>
-        <div id="history-items">
-          <div class="flex justify-between">
+        <div id="history-items" class="p-4">
+          <div
+            class="p-4 bg-gray-50 rounded-lg flex justify-between items-center mb-2"
+          >
             <div>
-              <h4>Ambulance</h4>
-              <p>999</p>
+              <h4 class="text-base font-semibold text-[18px] text-black">
+                Ambulance
+              </h4>
+              <p class="text-sm text-gray-500 inter-font">999</p>
             </div>
-            <div>10:45:30</div>
+            <div class="text-sm font-medium text-black">10:45:30</div>
           </div>
         </div>
       </div>

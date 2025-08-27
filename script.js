@@ -24,25 +24,29 @@ for (item of callBtnEl) {
     } else {
       const wholeCard = event.target.closest(".card-call");
       const title = wholeCard.querySelector("h3");
-      //   const subtitle = ele.querySelector("p");
       const number = wholeCard.querySelector("span");
       const time = (now = new Date());
 
       window.alert("Calling... " + title.innerText + "- " + number.innerText);
       coinEl.innerText = Number(coinEl.innerText) - 20;
-
       historyItemsEl.innerHTML =
-        '<div class="flex justify-between"><div><h4>' +
+        '<div class="p-4 bg-gray-50 rounded-lg flex justify-between items-center mb-2">' +
+        "<div>" +
+        '<h4 class="text-base font-semibold text-[18px] text-black">' +
         title.innerText +
-        "</h4><p>" +
+        "</h4>" +
+        "<p class='text-sm text-gray-500 inter-font'>" +
         number.innerText +
-        "</p></div><div>" +
+        "</p>" +
+        "</div>" +
+        "<div class='text-sm font-medium text-black'>" +
         time.getHours() +
         ":" +
         time.getMinutes() +
         ":" +
         time.getSeconds() +
-        "</div></div>" +
+        "</div>" +
+        "</div>" +
         historyItemsEl.innerHTML;
     }
   });
