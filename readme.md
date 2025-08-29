@@ -1,165 +1,39 @@
-## WELCOME TO ( সহজ সরল সিম্পল ) ASSIGNMENT-005
 
-### 📅 Deadline For 60 marks: 29th August, 2025 (11:59 pm ⏱️)
 
-### 📅 No Deadline For 50 marks
+Ans to the Q.N-01
 
-### 📅 Deadline For 30 marks: Any time after 29th August.
+getElementById: With this method, we can find an element using its unique ID. The ID should not be used anywhere else in the code.
 
----
+getElementsByClassName: With this method, we can find multiple elements that share the same class name.
 
-## ✅ Main Requirements (50 Marks)
+querySelector: Using querySelector, it will select only the first tag element from multiple tags.
 
-### 1. Navbar
+querySelectorAll: Using querySelectorAll, it will select all of them as an array (NodeList).
 
-- **Website name & logo** on the left as Figma
-- **Heart icon, coin count (default-100), and Copy Count** on the right as Figma
 
----
 
-### 2. Hero Section
 
-- **Background Gradient** in the Whole Section
-- **A Relevant Logo** at the top-center
-- **Section Title** in the center
-- **A Relevant Slogan** in the bottom Center
+Ans to the Q.N-02
 
----
+To create a new element and insert it into the DOM, I can explain with an example. Suppose there is a div with the ID parent. If I want to insert a paragraph inside this div, then I have to do: first create a paragraph element, then set its text content, and finally append it to the parent div. In this way, it can be done.
+example:
+<div id="parent"></div> 
+ekta div ache parent id diye ami eitar vitor ekti paragraph insert korte chai tahole amke korte hobe
+let addPara=document.createElement("p"); 
+addPara.textContent = "This is a Paragraph"; 
+div.appendChild(addPara);
 
-### 2. Main Section
+Ans to the Q.N-03
 
-This Section will have layout as figma
+Event Bubbling is a process in JavaScript where, when an event occurs on a child element (for example, a click), it doesn’t stop at that element. Instead, the event gradually propagates upward, moving through the parent element, then the grandparent, and eventually reaching the document. This step-by-step upward propagation is what is called Event Bubbling.
 
-<table border=1 width="100%" cellpadding="50">
-<tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
- </tr>
- <tr>
-    <td colspan=9 >Card Section</td>
-    <td colspan=3>History Section</td>
- </tr>
-</table>
 
-### Emergency Hotline Section
+Ans to the Q.N-04
 
-- **Show Minimum 6 cards**. Each card will contain:
-  - Icon or Image
-  - Relevant Name
-  - Relevant Name in English
-  - Hotline number for calling
-  - Category Badge
-  - 💗 icon at left
-  - **2 buttons** at the bottom: Copy and Call with icons as Figma
+Event Delegation is a process in JavaScript where, instead of attaching separate event listeners to multiple child elements, we add a single listener to their parent element. Then, using event.target, we can determine which child element actually triggered the event.
 
-### History Section
 
-- **A white Background** in the whole section
-- **History Title with icon** at the top-left as Figma
-- **Clear History Button** at the top-right as Figma
+Ans to the Q.N-05
 
----
-
-### 3. Responsiveness (5 Marks)
-
-- Website should be fully **responsive for mobile devices** (implementation up to you)
-
----
-
-## Functionalities
-
-### 4. Heart Icons
-
-- Clicking on the 💗 **heart icon** of any card will increase the count in the Navbar
-
----
-
-### 5. Call Buttons
-
-- On clicking a card's **Call Button**, following actions will happen:
-  - Show an **alert** with a message including the service name and number
-  - Each call will **cut 20 coins**. Reduce Coin after each click.
-  - If coins are less than 20, show a relevant alert and terminate the process.
-  - Add this service into the **Call History section** with:
-    - Service name
-    - Service number
-
----
-
-### 5. Call History Section
-
-- Show all called services with name & number. This will empty initially. when call button clicked it will filled dynamically.
-- A **Clear History button** on the right
-- Clicking this button will remove all data from call history
-
----
-
-## Create Readme
-
-You have to create a `Readme.md` file. and write down following questions. Dont Try to copy paste from AI Tools. Just write what you know about these. If you don't know , then search , learn , understand and then write.
-
-### 6. Answer the following questions clearly:
-
-1. What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?
-2. How do you **create and insert a new element into the DOM**?
-3. What is **Event Bubbling** and how does it work?
-4. What is **Event Delegation** in JavaScript? Why is it useful?
-5. What is the difference between **preventDefault() and stopPropagation()** methods?
-
----
-
-## 🧪 Challenges Part (10 Marks)
-
-- On clicking the **Copy button**, show an alert and **increase the copy count** (3 Marks)
-
-- Hotline number will be **copied on click** so it can be pasted anywhere (4 Marks)
-
-💡Hint: You can ask for Help from `ChatGPT` Mamma . Just copy the below prompt , generate answer. use it with your own way.
-
-```bash
-I have a card with some text and a button inside it. I want that when a user clicks the button, some specific text from the card is copied to the clipboard using JavaScript. Please provide the code and explain it step by step.
-```
-
-- After clicking on the **Call button**, the **exact time of the call** will be shown in the Call History section (3 Marks)
-
-💡Hint: Search Google with that below question
-
-```bash
-How to get current local time in js
-```
-
----
-
-## ⚙️ Technology Stack
-
-- HTML
-- CSS ( Vanilla , Tailwind CSS , DaisyUI , Others - wheatever you like )
-- JavaScript ( Vanilla only. No Framework / Library Allowed )
-
----
-
-## 📌 Rules
-
-- ✅ Minimum **5 meaningful commits** required
-- ❌ No Lorem Ipsum or dummy placeholder text. Use **relevant content only**
-
----
-
-## 🔗 What to Submit
-
-- 📂 **GitHub Repository**
-- 🌐 **Live Link**
-
----
-
-# Let's Code and Achieve your Dream 🎯
+preventDefault(): This method allows us to stop the default behavior of an element.
+stopPropagation(): This method prevents an event from spreading through the DOM all the way up to the document.
